@@ -7,7 +7,7 @@ import co.edu.uptc.datos.Inventario;
 // Ventana principal de la aplicación.
 // Usa un CardLayout para alternar entre la pantalla de login
 // y la pantalla del catálogo, mostrando solo una a la vez.
-public class VentanaPrincipal extends JFrame {
+public class VentanaPrincipal extends JFrame { 
 
     private CardLayout barraMenu = new CardLayout();
     private JPanel panelActual = new JPanel(barraMenu);

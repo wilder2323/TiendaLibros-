@@ -31,7 +31,7 @@ public class Inventario {
             listaLibros.set(indice, libro);
         }
     // Reemplaza un libro existente por su versión actualizada.
-    // Se busca por posición en la lista, ya que es el mismo objeto en memoria.    
+    // Se busca por posición en la lista, ya que es el mismo objeto en memoria.     
     }
 
     public void eliminarLibro(String isbn) {

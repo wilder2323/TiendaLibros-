@@ -32,7 +32,7 @@ public class PanelInicioSesion extends JPanel {
         c.gridy = 2; caja.add(new JLabel("Contraseña"), c);
         c.gridy = 3; caja.add(campoContraseña, c);
 
-        etiquetaError.setForeground(Color.RED);
+        etiquetaError.setForeground(Color.RED); 
         c.gridy = 4; caja.add(etiquetaError, c);
 
         JButton botonIniciarSesion = new JButton("Iniciar sesión");

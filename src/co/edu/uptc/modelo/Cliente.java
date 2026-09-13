@@ -10,8 +10,8 @@ public class Cliente {
         this.nombreCompleto = nombreCompleto;
         this.contraseña = contraseña;
     }
-// Valida las credenciales ingresadas.
-// Retorna true solo si tanto el nombre como la contraseña
+// Valida las credenciales ingresadas. 
+// Retorna true solo si tanto el nombre como la contraseña 
 // fueron diligenciados.
     public boolean iniciarSesion() {
         return nombreCompleto != null && !nombreCompleto.isBlank()

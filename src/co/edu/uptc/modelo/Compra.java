@@ -30,7 +30,7 @@ public class Compra {
                 "\nLibro: " + libroComprado.getTitulo() +
                 "\nImpuestos: $" + String.format("%.0f", impuestos) +
                 "\nTotal: $" + String.format("%.0f", totalCompra);
-// Genera el texto tipo recibo con los datos de la compra                
+// Genera el texto tipo recibo con los datos de las compras                
     }
 
     public void actualizarInventario(Inventario inventario) {

@@ -216,7 +216,7 @@ public class PanelCatalogo extends JPanel {
                 if (actualizar) {
                     existente.setIsbn(campoIsbn.getText().trim());
                     existente.setTitulo(campoTitulo.getText().trim());
-                    existente.setAutor(campoAutor.getText().trim());
+                    existente.setAutor(campoAutor.getText().trim()); 
                     existente.setCategoria(campoGenero.getText().trim());
                     existente.setEditorial(campoEditorial.getText().trim());
                     existente.setNumeroPaginas(paginas);

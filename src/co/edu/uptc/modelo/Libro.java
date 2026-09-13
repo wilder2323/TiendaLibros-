@@ -11,7 +11,7 @@ public class Libro {
     private double precio;
     private int cantidadDisponible;
     private String formatoLibro;
-// Representa un libro del catálogo de la tienda.
+// Representa un libro del catálogo de la tienda. 
 // Es una clase de modelo: solo guarda datos y sabe describirse a sí misma,
 // no contiene lógica de interfaz ni de inventario.
 
