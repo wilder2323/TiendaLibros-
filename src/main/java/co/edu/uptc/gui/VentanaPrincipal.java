@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import co.edu.uptc.modelo.Cliente;
 import co.edu.uptc.modelo.Carrito;
+import co.edu.uptc.datos.AlmacenJson;  
 import co.edu.uptc.datos.Inventario;
 import co.edu.uptc.datos.RepositorioClientes;
 import co.edu.uptc.datos.RepositorioCompras;
@@ -36,6 +37,9 @@ public class VentanaPrincipal extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(780, 500);
         setLocationRelativeTo(null);
+
+        //carga los libros, clientes y compras guardados en los JSON
+        AlmacenJson.cargarTodo(inventario, repositorioClientes, repositorioCompras);
 
         panelInicioSesion = new PanelInicioSesion(this, repositorioClientes);
         panelRegistro = new PanelRegistro(this, repositorioClientes);

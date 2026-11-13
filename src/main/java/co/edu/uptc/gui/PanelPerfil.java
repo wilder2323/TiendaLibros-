@@ -139,6 +139,8 @@ public class PanelPerfil extends JPanel {
         cliente.setCorreo(correo);
         cliente.setDireccionEnvio(direccion);
         cliente.setTelefono(telefono);
+        repositorioClientes.guardar();   
+        repositorioCompras.guardar();    // las compras guardan el correo del cliente
 
         etiquetaError.setText(" ");
         JOptionPane.showMessageDialog(this, "Datos actualizados correctamente.");

@@ -1,0 +1,18 @@
+[
+  {
+    "idCompra": 1,
+    "correoCliente": "wilder@gmail.com",
+    "fecha": "2026-11-12",
+    "libros": [
+      {
+        "isbn": "001",
+        "cantidad": 4
+      }
+    ],
+    "subtotal": 492492.0,
+    "totalImpuestos": 93573.48,
+    "descuento": 0.0,
+    "totalCompra": 586065.48,
+    "metodoPago": "Tarjeta"
+  }
+]

@@ -9,6 +9,15 @@ import java.util.List;
 public class RepositorioClientes {
     private List<Cliente> clientes = new ArrayList<>();
 
+    public List<Cliente> getClientes() {
+        return clientes;
+    }
+
+    // escribe la lista de clientes en clientes.json
+    public void guardar() {
+        AlmacenJson.guardarClientes(this);
+    }
+
     // Se usa al registrarse, para no permitir correos repetidos
     public boolean correoRegistrado(String correo) {
         for (Cliente c : clientes) {
@@ -19,6 +28,7 @@ public class RepositorioClientes {
 
     public void registrarCliente(Cliente cliente) {
         clientes.add(cliente);
+        guardar();   // NUEVO
     }
 
     // Busca un cliente por su correo; devuelve null si no existe

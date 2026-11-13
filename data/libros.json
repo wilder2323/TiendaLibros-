@@ -1,0 +1,14 @@
+[
+  {
+    "isbn": "001",
+    "titulo": "wilderrrrr",
+    "autor": "wilder",
+    "anioPublicacion": 1999,
+    "categoria": "terrort",
+    "editorial": "con",
+    "numeroPaginas": 232,
+    "precio": 123123.0,
+    "cantidadDisponible": 8,
+    "formatoLibro": "Físico"
+  }
+]

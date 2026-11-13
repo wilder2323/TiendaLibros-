@@ -12,8 +12,19 @@ import java.util.List;
 public class RepositorioCompras {
     private List<Compra> compras = new ArrayList<>();
 
+    
+    public List<Compra> getCompras() {
+        return compras;
+    }
+
+    // escribe todas las compras en compras.json
+    public void guardar() {
+        AlmacenJson.guardarCompras(this);
+    }
+
     public void registrarCompra(Compra compra) {
         compras.add(compra);
+        guardar();  
     }
 
     // Filtra solo las compras que pertenecen a ese cliente en particular

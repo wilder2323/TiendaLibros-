@@ -34,6 +34,23 @@ public class Compra {
         this.metodoPago = metodoPago;
     }
 
+    // constructor usado solo al leer compras.json. Reconstruye una compra ya hecha
+    // tal como quedó guardada. También ajusta el contador
+    // para que la próxima compra nueva no repita un id.
+    public Compra(int idCompra, Cliente cliente, LocalDate fechaCompra, List<ItemCarrito> librosComprados,
+                  double subtotal, double totalImpuestos, double descuento, double totalCompra, String metodoPago) {
+        this.idCompra = idCompra;
+        this.cliente = cliente;
+        this.fechaCompra = fechaCompra;
+        this.librosComprados = librosComprados;
+        this.subtotal = subtotal;
+        this.totalImpuestos = totalImpuestos;
+        this.descuento = descuento;
+        this.totalCompra = totalCompra;
+        this.metodoPago = metodoPago;
+        if (idCompra >= contadorId) contadorId = idCompra + 1;
+    }
+
     // Arma el texto del recibo con el detalle de libros, subtotal, IVA,
     // descuento (si hubo) y total a pagar
     public String generarRecibo() {
@@ -73,6 +90,10 @@ public class Compra {
     public Cliente getCliente() { return cliente; }
     public LocalDate getFechaCompra() { return fechaCompra; }
     public List<ItemCarrito> getLibrosComprados() { return librosComprados; }
+    // NUEVO: estos tres getters los necesita AlmacenJson para guardar la compra
+    public double getSubtotal() { return subtotal; }
+    public double getTotalImpuestos() { return totalImpuestos; }
+    public double getDescuento() { return descuento; }
     public double getTotalCompra() { return totalCompra; }
     public String getMetodoPago() { return metodoPago; }
 }
