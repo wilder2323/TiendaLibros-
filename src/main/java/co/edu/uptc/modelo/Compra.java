@@ -90,7 +90,7 @@ public class Compra {
     public Cliente getCliente() { return cliente; }
     public LocalDate getFechaCompra() { return fechaCompra; }
     public List<ItemCarrito> getLibrosComprados() { return librosComprados; }
-    // NUEVO: estos tres getters los necesita AlmacenJson para guardar la compra
+    // estos tres getters los necesita AlmacenJson para guardar la compra
     public double getSubtotal() { return subtotal; }
     public double getTotalImpuestos() { return totalImpuestos; }
     public double getDescuento() { return descuento; }

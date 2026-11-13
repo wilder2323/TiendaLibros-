@@ -36,7 +36,7 @@ public class Inventario {
     // Agrega un libro nuevo al inventario
     public void agregarLibro(Libro libro) {
         listaLibros.add(libro);
-        AlmacenJson.guardarLibros(this);   // NUEVO
+        AlmacenJson.guardarLibros(this); 
     }
 
     // Reemplaza un libro existente por su versión actualizada.
@@ -52,7 +52,7 @@ public class Inventario {
     // Elimina un libro del inventario según su ISBN
     public void eliminarLibro(String isbn) {
         listaLibros.removeIf(l -> l.getIsbn().equals(isbn));
-        AlmacenJson.guardarLibros(this);   // NUEVO
+        AlmacenJson.guardarLibros(this);  
     }
 
     // Indica si un libro tiene unidades disponibles

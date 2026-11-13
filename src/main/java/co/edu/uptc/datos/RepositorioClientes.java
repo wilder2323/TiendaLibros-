@@ -28,7 +28,7 @@ public class RepositorioClientes {
 
     public void registrarCliente(Cliente cliente) {
         clientes.add(cliente);
-        guardar();   // NUEVO
+        guardar(); 
     }
 
     // Busca un cliente por su correo; devuelve null si no existe
